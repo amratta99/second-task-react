@@ -1,0 +1,82 @@
+.parent{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transition: 1s;
+}
+.ChangeNavBackgroundColor{
+    background-color: #34332f;
+}
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 85vw;
+    padding: 0 40px;
+    /* display: none; */
+}
+.logo>img{
+    height: 48px;
+    width: 176.5px;
+}
+.togglerLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toggeler svg{
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+.toggeler{
+    display: none;
+}
+.links a{
+    height: 90px;
+    padding: 0 15px;
+    text-decoration: none;
+    font-family: "Alegreya", serif;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a:hover{
+    
+    color: #a89972;
+}
+
+@media screen and (max-width : 850px) {
+    .links{
+        display: flex;
+        height: calc(100vh - 90px);
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 90px;
+        background-color: #34332f;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        display: none;
+    }
+    .toggeler{
+        display: flex;
+    }
+    .show{
+        display: flex;
+    }
+}

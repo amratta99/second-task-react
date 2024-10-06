@@ -1,0 +1,25 @@
+.footerContainer{
+    padding: 72px 0 ;
+    background-color: #34332f;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footerContainer p, .footerContainer svg{
+    color: #777;
+    margin: 40px 0;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons svg{
+    background-color: #484540;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 42px;
+    margin: 0 5px;
+}
